@@ -1,0 +1,136 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 30px;
+}
+
+/* Summary Dashboard Section */
+.dashboard-summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.summary-box {
+    flex-grow: 1;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.summary-box h2 {
+    margin-top: 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.summary-box p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #0056b3;
+}
+
+/* Allocation Section */
+.allocation-section {
+    margin-bottom: 40px;
+}
+
+.category {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.category:last-child {
+    border-bottom: none;
+}
+
+.category label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.slider {
+    flex-grow: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #d3d3d3;
+    outline: none;
+    border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider-container span {
+    font-weight: bold;
+    min-width: 50px;
+    text-align: right;
+}
+
+.amount {
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Notes Section */
+.notes-section textarea {
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    margin-top: 10px;
+}
