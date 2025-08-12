@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpus Fund Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Financial Corpus Management</h1>
+
+        <div class="dashboard-summary">
+            <div class="summary-box">
+                <h2>Total Corpus</h2>
+                <p id="total-corpus">₹ 0</p>
+            </div>
+            <div class="summary-box">
+                <h2>Total Allocated</h2>
+                <p id="total-allocated">₹ 0</p>
+            </div>
+            <div class="summary-box">
+                <h2>Remaining Funds</h2>
+                <p id="remaining-funds">₹ 0</p>
+            </div>
+        </div>
+
+        <div class="allocation-section">
+            <h2>Allocation Plan</h2>
+
+            <div class="category">
+                <label for="health">Health Insurance</label>
+                <div class="slider-container">
+                    <input type="range" id="health" class="slider" min="0" max="100" value="5">
+                    <span id="health-percent">5%</span>
+                </div>
+                <div class="amount" id="health-amount">₹ 0</div>
+            </div>
+
+            <div class="category">
+                <label for="banking">Financial Instruments (Banking)</label>
+                <div class="slider-container">
+                    <input type="range" id="banking" class="slider" min="0" max="100" value="20">
+                    <span id="banking-percent">20%</span>
+                </div>
+                <div class="amount" id="banking-amount">₹ 0</div>
+            </div>
+            
+            <div class="category">
+                <label for="investments">Investment Strategies (MFs, Equity, etc.)</label>
+                <div class="slider-container">
+                    <input type="range" id="investments" class="slider" min="0" max="100" value="60">
+                    <span id="investments-percent">60%</span>
+                </div>
+                <div class="amount" id="investments-amount">₹ 0</div>
+            </div>
+
+            <div class="category">
+                <label for="posterity">Posterity Planning</label>
+                <div class="slider-container">
+                    <input type="range" id="posterity" class="slider" min="0" max="100" value="15">
+                    <span id="posterity-percent">15%</span>
+                </div>
+                <div class="amount" id="posterity-amount">₹ 0</div>
+            </div>
+        </div>
+
+        <div class="notes-section">
+            <h3>Planning Notes & Tax Strategies</h3>
+            <textarea placeholder="Use this space to write down your goals, investment ideas, and questions for your financial advisor. e.g., 'Ask CA about Section 54EC bonds for capital gains tax saving.'"></textarea>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
